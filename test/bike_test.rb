@@ -1,14 +1,7 @@
-# require 'simplecov'
-# SimpleCov.start
-require 'pry'
+require 'bundler/setup'
 require 'minitest/autorun'
-# puts $LOADED_FEATURES.grep(/minitest/)
-# binding.pry
 require_relative '../lib/bike'
-# require "minitest/reporters"
-# Minitest::Reporters.use!  
-
-
+require 'date'
 
 class BikeTest < Minitest::Test
   def setup
@@ -48,5 +41,10 @@ class BikeTest < Minitest::Test
     assert_raises(ArgumentError) do
       Bike.new("Trek")
     end
+  end
+
+  def test_build_date
+    build_today = "Build Date: #{Date.today}"
+    assert_equal(build_today, @bike.build_date)
   end
 end

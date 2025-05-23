@@ -1,0 +1,35 @@
+PATH
+  remote: .
+  specs:
+    example_bike_project (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ansi (1.5.0)
+    builder (3.3.0)
+    minitest (5.25.5)
+    minitest-reporters (1.7.1)
+      ansi
+      builder
+      minitest (>= 5.0)
+      ruby-progressbar
+    rake (13.2.1)
+    ruby-progressbar (1.13.0)
+    stamp (0.6.0)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  example_bike_project!
+  minitest (~> 5.10)
+  minitest-reporters (~> 1.1)
+  rake
+  stamp (~> 0.6.0)
+
+RUBY VERSION
+   ruby 3.2.6p234
+
+BUNDLED WITH
+   2.4.19
